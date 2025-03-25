@@ -1013,6 +1013,8 @@ pub struct Map {
     pub uri: String,
     pub byte_range: Option<ByteRange>,
     pub other_attributes: HashMap<String, QuotedOrUnquoted>,
+    /// Whether the EXT-X-MAP tag locates after the EXT-X-KEY tag
+    pub after_key: bool,
 }
 
 impl Map {
